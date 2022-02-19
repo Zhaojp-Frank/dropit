@@ -10,6 +10,8 @@ Interested? Take a look at our paper:
 
 Joya Chen*, Kai Xu*, Yifei Cheng, Angela Yao (* Equal Contribution)
 
+This repository contains the implementation of DropIT, which is co-developed by [Joya Chen](https://github.com/ChenJoya/) and [Kai Xu](https://github.com/kai422).
+
 ## Install
 
 The installation of DropIT is simple. The implementation only relies on [PyTorch](https://pytorch.org/) and [PyTorch-Lightning](https://www.pytorchlightning.ai/).
