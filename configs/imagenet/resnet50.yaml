@@ -1,0 +1,15 @@
+NUM_GPUS: 2
+DATALOADER:
+  NUM_WORKERS: 8
+DATASET: "imagenet"
+TRAIN:
+  PATH: "/data/kai422/imagenet/train"
+VAL:
+  PATH: "/data/kai422/imagenet/val"
+MODEL:
+  ARCH: "resnet50"
+  NUM_CLASSES: 1000
+  DROPIN: False
+SOLVER:
+  MAX_EPOCHS: 120
+CHECK_VAL_EVERY_N_EPOCH: 10
