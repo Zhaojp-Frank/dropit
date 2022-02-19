@@ -2,15 +2,13 @@
 
 DropIT aims to reduce memory consumption in intermediate tensors caching during training DNNs. In computer vision tasks, the GPU memory of intermediate tensors is often hundreds of times the model size (e.g., 20 GB vs. 100 MB for ResNet-50). DropIT solves this problem by adaptively caching part of intermediate tensors in the forward pass, and recovering sparsified tensors for gradient computation in the backward pass.
 
-figure
+![image](https://user-images.githubusercontent.com/20626415/154811392-61b45fba-fe1c-4df1-a9ec-865cf12bd8ad.png)
 
 Interested? Take a look at our paper: 
 
 [DropIT: <u>Drop</u>ping <u>I</u>ntermediate <u>T</u>ensors for Memory-Efficient DNN Training](http) 
 
 Joya Chen*, Kai Xu*, Yifei Cheng, Angela Yao (* Equal Contribution)
-
-This repository is the implementation of DropIT. 
 
 ## Install
 
@@ -37,6 +35,8 @@ CUDA_VISIBLE_DEVICES=0,1 python train.py --cfg configs/imagenet/vit_b_fastminkx0
 ## Evaluation
 
 Evaluation will be performed every N (N can be set in config) epochs during training. You can use tensorboard to see the results. An example:
+
+![tensorboard](https://user-images.githubusercontent.com/20626415/154811411-3481dc61-9870-4c0a-a67e-20e217abf634.png)
 
 ## Performance
 
