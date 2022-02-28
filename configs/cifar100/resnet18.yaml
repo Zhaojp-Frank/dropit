@@ -2,7 +2,7 @@ DATASET: 'cifar100'
 MODEL:
   ARCH: "resnet18"
   NUM_CLASSES: 100
-  DROPIN: False
+  DROPIT: False
 DATALOADER:
   NUM_WORKERS: 4
 SOLVER:
