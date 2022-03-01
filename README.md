@@ -6,7 +6,7 @@ DropIT aims to reduce memory consumption in intermediate tensors caching during 
 
 Interested? Take a look at our paper: 
 
-[DropIT: <u>Drop</u>ping <u>I</u>ntermediate <u>T</u>ensors for Memory-Efficient DNN Training](http) 
+[DropIT: <u>Drop</u>ping <u>I</u>ntermediate <u>T</u>ensors for Memory-Efficient DNN Training](https://arxiv.org/abs/2202.13808) 
 
 Joya Chen*, Kai Xu*, Yifei Cheng, Angela Yao (* Equal Contribution)
 
@@ -65,5 +65,10 @@ Evaluation will be performed every N (N can be set in config) epochs during trai
 Please consider citing our paper if it helps your research. The following is a BibTeX reference. 
 
 ```
-{}
+@article{dropit,
+      title={DropIT: Dropping Intermediate Tensors for Memory-Efficient DNN Training}, 
+      author={Joya Chen and Kai Xu and Yifei Cheng and Angela Yao},
+      year={2022},
+      journal={arXiv:2202.13808},
+}
 ```
