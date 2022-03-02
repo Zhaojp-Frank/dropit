@@ -3,7 +3,7 @@ import argparse, sys
 
 def parse_args():
     parser = argparse.ArgumentParser(
-        description="Provide ParTGrad video training and testing pipeline."
+        description="Provide DropIT training and testing pipeline."
     )
     parser.add_argument(
         "--cfg",
