@@ -1,21 +1,21 @@
 TRAIN:
   DATASET: "imagenet"
-  PATH: "/data/kai422/imagenet/train"
+  PATH: "/disk4/imagenet-data/train"
 VAL:
   DATASET: "imagenet"
-  PATH: "/data/kai422/imagenet/val"
+  PATH: "/disk4/imagenet-data/train"
 MODEL:
   ARCH: "vit_base_patch16_224"
   NUM_CLASSES: 1000
-  DROPIN: True
-DROPIN:
+  DROPIT: True
+DROPIT:
   STRATEGY: "fastmink"
   GAMMA: 0.9
   D: 16384
 DATALOADER:
   NUM_WORKERS: 8
 SOLVER:
-  BATCH_SIZE: 512
+  BATCH_SIZE: 64
   LR: 0.01
   MAX_EPOCHS: 8
   WARMUP_EPOCHS: 1

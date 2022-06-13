@@ -96,4 +96,4 @@ datamodules = {
 }
 
 def build_dataset(cfg):
-    return datamodules[cfg.DATASET](cfg)
+    return datamodules[cfg.TRAIN.DATASET](cfg)
